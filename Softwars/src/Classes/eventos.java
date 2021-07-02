@@ -10,5 +10,11 @@ package Classes;
  * @author FABRICIO
  */
 public class eventos {
+    public String nombre, efecto, leyenda;
     
+    public eventos(String nombre, String efecto, String leyenda){
+        this.nombre = nombre;
+        this.efecto = efecto;
+        this.leyenda = leyenda;
+    }
 }

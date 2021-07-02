@@ -10,5 +10,19 @@ package Classes;
  * @author FABRICIO
  */
 public class planosDeProyecto {
+    public String nombre;
+    public int costo_inicial, duracion;
+    private int calidad;
     
+    public planosDeProyecto(String nombre, int costo, int turnos){
+        this.nombre = nombre;
+        this.costo_inicial = costo;
+        this.duracion = turnos;
+    } 
+    public void subir_calidad(){
+        this.calidad += 1;
+    }
+    public int ver_calidad(){
+        return this.calidad;
+    }
 }
